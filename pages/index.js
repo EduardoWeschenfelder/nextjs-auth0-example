@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import Layout from '../components/layout';
-import { useFetchUser } from '../lib/user';
+import Layout from "../components/layout";
+import { useFetchUser } from "../lib/user";
 
 export default function Home() {
   const { user, loading } = useFetchUser();
@@ -10,11 +10,7 @@ export default function Home() {
     <Layout user={user} loading={loading}>
       <h1>Next.js and Auth0 Example</h1>
 
-      {loading && (
-        <p>
-          Loading login info...
-        </p>
-      )}
+      {loading && <p>Loading login info...</p>}
 
       {!loading && !user && (
         <>
@@ -22,7 +18,8 @@ export default function Home() {
             To test the login click in <i>Login</i>
           </p>
           <p>
-            Once you have logged in you should be able to click in <i>Profile</i> and <i>Logout</i>
+            Once you have logged in you should be able to click in{" "}
+            <i>Profile</i> and <i>Logout</i>
           </p>
         </>
       )}
@@ -34,5 +31,5 @@ export default function Home() {
         </>
       )}
     </Layout>
-  )
-};
+  );
+}

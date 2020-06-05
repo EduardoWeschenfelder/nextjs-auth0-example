@@ -4,6 +4,8 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+yarn.lock
+.now.json
 
 # Runtime data
 pids
@@ -62,3 +64,9 @@ dist/
 
 # Next.js
 .next
+.env.template
+now.json
+*.json
+*.json
+now.json
+now.json
